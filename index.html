@@ -1,74 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Recipe</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipe – CA5 Layout</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 
 <body>
 
-<div class="wrapper">
+<div id="container">
 
-  <div class="box1">
-    <h1>Ranch Mississippi Roast</h1>
-    <p>Everyone Loves It</p>
-    <h2>Slow Cooker Recipe</h2>
-    <p>This recipe is adapted from the Hidden Valley Recipe Website @ www.hiddenvalley.com </p>
-  </div>
+    <!-- ROW 1: HEADER -->
+    <div id="row1" class="row">
+        <div id="header" class="full">
+            <h1>My Amazing Recipe</h1>
+        </div>
+    </div>
 
-  <div class="box2">
-    <h2 class="rate">Rate This Recipe</h2>
-    <form>
-      <fieldset style="width: 250px;">
-        <legend>How difficult is this recipe?</legend>
+    <!-- ROW 2: LINKS | PICTURE | RATING -->
+    <div id="row2" class="row">
 
-        <label><input type="radio" name="difficulty" value="easy"> Easy</label>
-        <label><input type="radio" name="difficulty" value="medium"> Intermediate</label>
-        <label><input type="radio" name="difficulty" value="hard"> Hard</label>
+        <div id="links" class="col">
+            <h2>Links</h2>
+            <ul>             
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#equipment">Equipment</a></li>
+                <li><a href="#directions">Directions</a></li>
+            </ul>
 
-      </fieldset>
-    </form>
+        </div>
 
-    <h2>Conversion</h2>
-    <form>
-      <input type="text" id="tblspn" name="tblspn">
-      =
-      <input type="text" id="cups" name="cups">
-    </form>
-  </div>
+        <div id="picture" class="col">
+            <h2>Recipe Image</h2>
+            <img src="Images/Image1.jpg" alt="Recipe Image" class="recipe-img">
+            <p class="caption">As served.</p>
+        </div>
 
-</div> <!-- end wrapper row 1 -->
+        <div id="rating" class="col">
+            <h2>Rating</h2>
+            <span>⭐⭐⭐⭐☆</span>
 
+            <h3>Conversion Tool</h3>
+            <label>Enter cups:</label>
+            <input type="number" id="cupsInput">
+            <button>Convert</button>
+            <p id="result"></p>
+        </div>
 
-<div class="wrapper">
+    </div>
 
-  <div class="box3">
-    <h2>Ingredients</h2>
-    <ul>
-      <li>1 pound Boneless Chuck Roast</li>
-      <li>Kosher salt and freshly ground black pepper, to taste</li>
-      <li>1/4 cup all-purpose flour, as needed (optional)</li>
-      <li>3 tablespoons olive oil</li>
-      <li>1/2 cup beef broth</li>
-      <li>1 packet</li>
-      <li> 1 stick unsalted butter</li>
-      <li> 8 whole pepperoncini</li>
-    </ul>
-  </div>
+    <!-- ROW 3: INGREDIENTS | EQUIPMENT | DIRECTIONS -->
+    <div id="row3" class="row">
 
-  <div class="box4">
-    <h2>Directions</h2>
-    <ol>
-      <li>Season chuck roast generously with salt and pepper. Rub enough flour over the roast to evenly coat the surface.</li>
-      <li>In a large skillet pan, warm oil over high heat until very hot but not smoking. Sear the roast until browned and crusty on all sides, about 10 minutes total.</li>
-      <li>Place roast in the pot of a slow cooker. Pour beef broth around the roast, then sprinkle with seasoning mix, top with butter, and scatter pepperoncini over and around the roast.</li>
- <li>Cover the slow cooker and set on low heat for 7 to 8 hours. When ready, shred the meat, mixing with the sauce in the slow cooker, and serve over bread, egg noodles, or potatoes.</li>
-    </ol>
-  </div>
+        <div id="ingredients" class="col">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 yellow onions eggs</li>
+                <li> 1 tablespoon sugar</li>
+                <li>1 to 2 dashes Tabasco sauce, to taste</li>
+                <li>¼ teaspoon freshly ground black pepper</li>
+                <li>3 cloves garlic</li>
+                <li>1 cup rice</li>
+                <li>1/2 cup milk</li>
+                </ul>           
+        </div>
 
-</div> <!-- end wrapper row 2 -->
+        <div id="equipment" class="col">
+            <h2>Equipment</h2>
+            <ul>
+                <li>small saucepan</li>
+                <li>tablespoon</li>
+                <li>fork</li>
+                <li>knife</li>
+                <li>platter</li>
+            </ul>
+        </div>
+
+        <div id="directions" class="col">
+            <h2>Directions</h2>
+            <ol>
+                <li>Season chuck roast generously with salt and pepper. Rub enough</li>
+                <li>Rub enough flour over the roast to evenly coat the surface.</li>
+                <li>In a large skillet pan, warm oil over high heat until very hot.
+                <li>Sear the roast until browned and crusty on all sides, about 10 minutes total.</li>
+                <li>Place roast in the pot of a slow cooker. Pour beef broth around the roast, then sprinkle with seasoning mix, top with butter</li>
+                <li>Scatter pepperoncini over and around the roast.</li>
+                <li>Cover the slow cooker and set on low heat for 7 to 8 hours. When ready, shred the meat, mixing with the sauce in the slow cooker</li>
+                <li>Serve over bread, egg noodles, or potatoes.</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ROW 4: FOOTER -->
+    <div id="row4" class="row">
+        <div id="footer" class="full">
+            <p>&copy; 2026 My Recipe Page</p>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
-
